@@ -1,0 +1,524 @@
+/* --------------- GENERAL --------------- */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+/* body {
+  background: rgb(0,0,0);
+  background: linear-gradient(218deg, rgba(0,0,0,1) 11%, rgba(18,18,71,1) 50%, rgba(0,0,0,1) 89%);
+} */
+/* --------------------------- HEADER ---------------------- */
+
+header {
+  background-color: red;
+  background-image: url(../images/image1.jpg);
+  background-position: 50% 40%;
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  flex-direction: column;
+  justify-content: space-between;
+  /* opacity: 0.6; */
+}
+
+header h1 {
+  /* background-color: blue; */
+  display: flex;
+  width: fit-content;
+/*   max-height: 4rem; */
+  font-size: 3rem;
+  padding: 0.5rem;
+  align-self: start;
+  flex-wrap: wrap;
+  font-style: italic;
+  text-shadow: 3px 3px 9px black;
+}
+
+header h2 {
+  background-color: yellow;
+  width: 100%;
+  padding: 0.5rem;
+  max-height: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 2px solid black;
+  /* align-self: flex-end; */
+}
+
+.logo {
+  /* background-color: black; */
+  width: 5rem;
+/*   display: flex;
+  flex-wrap: wrap; */
+  align-self: end;
+  margin-top: -4.5rem;
+  margin-right: 1.3rem;
+}
+
+.logo {
+  transition: transform .5s;
+}
+
+.logo:hover {
+  transform: scale(1.5);
+}
+
+nav {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* background-color: grey; */
+  height: 3rem;
+  margin-top: 5.7rem;
+}
+
+nav a{
+  border: 3px solid black;
+  border-radius: 0.5rem;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0.6rem;
+  align-self: center;
+  background-color: yellow;
+  text-decoration: none;
+  margin-left: 1rem;
+  color: black;
+  transition:.4s ease-in-out;
+}
+
+nav a:hover{
+  background-color: black;
+  color: yellow;
+}
+
+
+/* nav a:visited:not(active){
+  color: black;
+} */
+
+.active {
+  background-color: black;
+  color: yellow;
+}
+/* VER COMO PONER COLORES DE LINK VISITADOS */
+
+/* --------------------- MAIN SECTIONS -------------------- */
+
+main {
+  min-height: 63vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+section, .general-rules {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  margin-left: 75px;
+}
+
+section h3{
+  font-size: 2.5rem;
+  font-style: italic;
+  color: yellow;
+}
+
+section p{
+  font-size: 1.2rem;
+  margin-left: 10px;
+  margin-right: 20px;
+  color: yellow;
+}
+
+.footer-image img{
+  height: 450px;
+  max-width: 490px;
+  margin-left: 50px;
+  margin-top: 75px;
+  border: 6px solid yellow;
+  border-radius: 15px;
+  opacity: 0.7;
+  object-fit: cover;
+}
+
+/* .footer-image img:hover {
+  transform:scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+.footer-image {
+  overflow:hidden;
+}
+*/
+
+/* ---------- FORMULARIO -------------------- */
+
+.formulario {
+  width: 100%;
+  margin: 40px 20rem 20px 25rem;
+  background-image: linear-gradient(rgb(17, 17, 17), rgb(58, 58, 58));
+  border: 2px solid rgb(17, 17, 17);
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+form input{
+  background-color: yellow;
+  border: 3px solid black;
+  padding: 5px;
+  font-weight: 600;
+}
+
+
+fieldset {
+  padding: 3px;
+  text-align: start;
+  border: none;
+}
+
+
+.name_form, .address_form, .city_form {
+  height: 70px;
+  width: 100%;
+}
+
+.name_form input{
+  width: 400px;
+}
+
+.address_form input{
+  width: 975px;
+}
+
+.city_form input{
+  width: 482px;
+}
+
+.birth_form input{
+  width: 280px;
+}
+
+.birth_form {
+  width: 50%;
+  height: 60px;
+}
+
+.gender_form{
+  width: 30%;
+  height: 70px;
+  margin-left: 50px;
+}
+
+.gender_form legend{
+  margin-bottom: -10px
+}
+
+.grade_form{
+  height: 90px;
+  width: 100%;
+}
+
+.school_form{
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.position_form{
+  margin-top: -45px;
+  width: 100%;
+  height: 130px;
+}
+
+.position_form>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.uniform-1 label, .uniform-2 label{
+  padding: .2rem;
+}
+
+.uniform_form{
+  height: 175px;
+}
+
+.uniform_form>div{
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.uniform-1{
+  display: flex;
+  flex-direction: column;
+}
+
+.uniform-2{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.permission_form h5{
+  font-size: 30px;
+  color: white; 
+}
+
+.permission_form p{
+  font-size: 18px;
+  margin: 0 0 15px 0;
+  color: white;
+}
+
+.new_legend{
+  font-size: 30px;
+  color: white;
+  width: 100%;
+}
+
+fieldset label{
+  font-size: 20px;
+  color: white;
+  padding-left: 10px;
+}
+
+
+fieldset legend{
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+fieldset h4{
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+
+#submit_button{
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: yellow;
+  color: black;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+#submit_button:hover{
+  background-color: black;
+  color: yellow;
+  transition: .4s;
+}
+
+/* -------------- LISTAS -------------------- */
+
+.general-rules, .table-text{
+  width: 1000px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+dl dt, .list-title{
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: yellow;
+}
+
+#non-style-list {
+  list-style-type: none;
+}
+
+ol li, ul li{
+  margin-left: 25px;
+  font-size: 1.1rem;
+  margin-right: 20px;
+  color: yellow;
+  padding-top: 15px;
+}
+
+/* ol li{
+  list-style-position: inside;
+}
+ */
+dl dd {
+  margin-right: 20px;
+  color: yellow;
+  margin-left: 25px;
+}
+
+.fields-young li{
+  list-style-type: lower-alpha;
+  /* margin-left: 45px; */
+}
+
+ul li{
+  list-style-type: circle;
+}
+
+.negritas{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/* -------------------- TABLA ------------------ */
+
+caption {
+  font-style: italic;
+  text-decoration: underline;
+  caption-side: top;
+  text-align: left;
+  margin-bottom: 0.3rem;
+}
+
+table, td, th {
+  /* border: 3px solid yellow;
+  border-collapse: collapse; */
+  text-align: center;
+  padding: 0.4rem;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+}
+
+thead tr th{
+  font-weight: 900;
+  /* background-color: yellow; */
+  color: white;
+}
+
+tbody tr td:hover{
+  background-color: yellow;
+  color: black;
+}
+
+.days {
+  width: 1rem;
+}
+
+.teams {
+  width: 7rem;
+}
+
+.locations {
+  width: 6rem;
+}
+
+.maps {
+  width: 6rem;
+}
+
+.times {
+  width: 2rem;
+}
+
+.frames {
+  width: 200px;
+  height: 100px;
+  border: 2px solid yellow;
+}
+
+.frames:hover {
+  transform: scale(1.8);
+  transition: .5s;
+}
+
+.add-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-top: 10px;
+  /* background-color: blueviolet; */
+  width: 100%;
+  max-width: max-content;
+  flex-wrap: wrap;
+}
+
+.add-info h5 {
+  font-size: 1.1rem;
+  color: yellow;
+}
+
+.add-info p, .add-info a{
+  color: white;
+}
+
+/* ----------------- FOOTER -------------- */
+
+footer {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: end;
+}
+
+footer h6{
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+
+footer a{
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 yellow;
+  color: yellow;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .5s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+footer a:visited{
+  color: yellow;
+}
+
+footer a:hover{
+  box-shadow: inset 540px 0 0 0 yellow;
+  color: black;
+}
+
+main a:visited{
+  color: yellow;
+}
+
+main a:hover{
+  box-shadow: inset 540px 0 0 0 yellow;
+  color: black;
+}
+
+main a{
+  box-shadow: inset 0 0 0 0 yellow;
+  color: yellow;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
